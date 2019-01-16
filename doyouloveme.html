@@ -8,15 +8,15 @@
 <h1>Do you love me?</h1>
 
     <button type="button" id="yes" onclick="alert('');">Yes</button>
-<input type="button" id="no" onmouseover="mouseOver()" value="No"/>
+    <input type="button" id="no" onmouseover="mouseOver()" value="No" style="position: absolute;"/>
 
     <script>
         function mouseOver(){
-            // var height = window.innerHeight;
-            // var weight = window.innerWidth;
+            var height = window.innerHeight;
+            var weight = window.innerWidth;
             var nobutton = document.getElementById("no");
-            nobutton.style.left =  "100px";
-            nobutton.style.top = "100px";
+            nobutton.style.left =  Math.random()*height + 'px';
+            nobutton.style.top = Math.random()*weight + 'px';
         }
 
     </script>
